@@ -119,3 +119,24 @@ body {
     display: block;
     margin: 0 1rem 3rem 1rem;
   }
+
+  .productCards{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .aboutInfo{
+    font-family:"Lato", serif;
+    font-size: 19.2px;
+    line-height: 38.4px;
+    font-weight: 400;
+  }
+  .phoneNumber{
+    font-family:"Lato", serif;
+    color: #59331D;
+    font-size: 19.2px;
+    line-height: 38.4px;
+    font-style: solid;
+    text-decoration: underline;
+    font-weight: 400;
+  }
