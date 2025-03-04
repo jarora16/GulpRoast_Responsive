@@ -1,3 +1,7 @@
+/* -----for all pages------ */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -42,154 +46,213 @@ header {
 
 }
 
-  /* navbar styling */
-  nav ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-end;
-    justify-content: center;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-  }
-  
-  nav li {
-    margin: 0 1rem 1rem 1rem;
-    font-size: 1.3rem;
-  }
-  
-  /* max width on the image in pixels */
-  nav img {
-    max-width: 150px;
-  }
-  
-  nav .logo {
-    text-align: center;
-  }
-  
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-    display: block;
-  }
-  
-  nav a:hover {
-    color: #d98555;
-  }
-  /* establishes a white background */
-  .main-bkgd {
-    background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
-    padding-bottom: 300px;
-  }
-  /* sits inside of the white background, centered */
-  .main {
-    padding: 2rem;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    gap: 20px;;
-    max-width: 1280px;
-  
-  }
-  article {
-    flex:1;
-    border: 2px solid red;
-    border-radius: 2px; 
-  }
-  figure {
-    flex: 1 ;
-    margin: 3rem 0 0 0;
-    border: 2px solid green;
-    border-radius: 2px; 
-  }
-  figure img{
-    width: fit-content;
-    height: fit-content;
-  }
-  
-  .button {
-    display: inline-block;
-    background-color: #59331D;
-    border-radius: 10px;
-    padding: 0.5rem 1rem;
-    margin: 0;
-    color: #f2f2f2;
-    text-decoration: none;
-    border: 3px solid #59331d;
-  }
-  .button:hover {
-    background-color: #f2f2f2;
-    color: #59331d;
-  }
-  footer {
-    background-color: #082B59;
-    color: #f2f2f2;
-    text-align: center;
-    border-top: 10px solid #d98555;
-  }
-  footer ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-  }
-  footer a {
-    color: #f2f2f2;
-    font-size: 2rem;
-    display: block;
-    margin: 0 1rem 3rem 1rem;
-  }
-
-  .productCards{
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .aboutInfo{
-    font-family:"Lato", serif;
-    font-size: 19.2px;
-    line-height: 38.4px;
-    font-weight: 400;
-  }
-  .phoneNumber{
-    font-family:"Lato", serif;
-    color: #59331D;
-    font-size: 19.2px;
-    line-height: 38.4px;
-    font-style: solid;
-    text-decoration: underline;
-    font-weight: 400;
-  }
-
-/* -----for tablets--- */
-@media screen and (min-width:600px) and (max-width:1024px) {
-
-  /* -----nav responsive---- */
-    nav {
-      flex-direction: column;
-  }
-
-  nav ul {
-      flex-direction: row;
-      text-align: center;
-  }
-
+/* navbar styling */
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+  justify-content: center;
 }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+nav li {
+  margin: 0 1rem 1rem 1rem;
+  font-size: 1.3rem;
+}
+
+/* max width on the image in pixels */
+nav img {
+  max-width: 150px;
+}
+
+nav .logo {
+  text-align: center;
+}
+
+
+nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+nav a:hover {
+  color: #d98555;
+}
+
+/* for contact and product pages */
+.container {
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.container h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 80px;
+}
+
+
+[class*=col-] {
+  width: 100%;
+  padding: 10px;
+}
+
+picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.product-items {
+  background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
+  padding-bottom: 300px;
+  margin: auto;
+}
+
+
+.text h2 {
+  font-weight: 700;
+  font-size: 19.2px;
+  line-height: 38px;
+}
+
+.text p {
+  font-weight: 400;
+  font-size: 19.2px;
+  line-height: 38px;
+}
+
+
+/* -----footer for all----- */
+footer {
+  margin: auto;
+  color: #f2f2f2;
+  padding: 2rem;
+  text-align: center;
+  background-color: #082B59;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+footer a {
+  color: #f2f2f2;
+  font-size: 2rem;
+  display: block;
+  margin: 0 1rem 3rem 1rem;
+}
+
+footer p {
+  font-size: 16px;
+  line-height: 38px;
+}
+
+.right-reserved {
+  margin-bottom: 20px;
+  font-size: 19.2px;
+}
+
+/* ---------contact css------- */
+
+.main-body p {
+  font-weight: 400;
+  font-size: 19.2px;
+  line-height: 38px;
+  font-family: 'lato';
+}
+
+/* about css */
+/* establishes a white background */
+.main-body {
+  background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
+  padding-bottom: 300px;
+  margin: auto;
+}
+
+.main {
+  /* padding: 1rem; */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+article {
+  width: 65%;
+  font-size: 19.2px;
+  line-height: 38px;
+  padding-right: 10px;
+}
+
+.coffee-image {
+  margin: 0.5rem 0 0 0;
+  width: 33.33%;
+  border-radius: 10px;
+  height: 358px;
+}
+
+.coffee-image img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+
+.button {
+  display: inline-block;
+  background-color: #59331D;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  color: #f2f2f2;
+  text-decoration: none;
+  border: 3px solid #59331d;
+}
+
+.button:hover {
+  background-color: #f2f2f2;
+  color: #59331d;
+}
+
+.phoneNumber{
+  font-family:"Lato", serif;
+  color: #59331D;
+  font-size: 19.2px;
+  line-height: 38.4px;
+  font-style: solid;
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+
 /* ---for mobile--- */
 
 @media (max-width:600px) {
 
-  /* ----navbar resonsive----- */
-    nav {
+  /* ----navbar resonsive for all pages----- */
+  nav {
       flex-direction: column;
   }
 
@@ -217,4 +280,83 @@ header {
       width: 100%;
   }
 
+  .coffee-image {
+      width: 100%;
+  }
+
+  
+}
+
+
+/* -----for tablets---ipads */
+@media screen and (min-width:600px) and (max-width:1024px) {
+
+  /* -----nav responsive for all pages---- */
+  nav {
+      flex-direction: column;
+  }
+
+  nav ul {
+      flex-direction: row;
+      text-align: center;
+  }
+
+  /* --responsive for product and contact pages-- */
+
+  .row {
+      flex-direction: row;
+  }
+.align-items{
+  align-items: center;
+}
+  /* ----for product pages--- */
+  .col-lg-4 {
+      width: 35%;
+  }
+
+  .col-lg-8 {
+      width: 65%;
+  }
+
+  /* ---for contact page---- */
+  .col-lg-6 {
+      width: 50%;
+  }
+
+
+
+}
+
+/* ----for large device,desktop,laptop--- */
+@media screen and (min-width:1024px)  {
+
+  /* ---responsive for navbar of all pages--- */
+  nav {
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  /* ----resonsive for contact and product pages--- */
+  .row {
+      flex-direction: row;
+      /* justify-content: space-between; */
+  
+  }
+  .align-items{
+      align-items: center;
+  }
+
+  /* -----responsive for product pages---- */
+  .col-lg-4 {
+      width: 33.33%;
+  }
+
+  .col-lg-8 {
+      width: 33.33%;
+  }
+
+  /* ----responsive for contact pages---- */
+  .col-lg-6 {
+      width: 50%;
+  }
 }
